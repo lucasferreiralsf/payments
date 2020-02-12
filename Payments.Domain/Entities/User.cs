@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Payments.Domain.Entities
 {
-    public class User
+    public class User : EntityBase
     {
         public int Id { get; set; }
         public string Email { get; set; }
@@ -14,6 +14,11 @@ namespace Payments.Domain.Entities
         public ICollection<Order> Orders { get; set; }
         public User()
         {
+        }
+
+        public override void Validate()
+        {
+            throw new NotImplementedException();
         }
     }
 }

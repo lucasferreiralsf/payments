@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Payments.Domain.Entities
 {
-    public class OrderItem
+    public class OrderItem : EntityBase
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
@@ -9,6 +9,11 @@ namespace Payments.Domain.Entities
 
         public OrderItem()
         {
+        }
+
+        public override void Validate()
+        {
+            if (ProductId == 0) AddValidationMessage("ProductId must be filled.");
         }
     }
 }

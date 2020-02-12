@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Payments.Domain.Entities
 {
-    public class Product
+    public class Product : EntityBase
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -9,6 +9,11 @@ namespace Payments.Domain.Entities
         public decimal Price { get; set; }
         public Product()
         {
+        }
+
+        public override void Validate()
+        {
+            throw new NotImplementedException();
         }
     }
 }

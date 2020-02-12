@@ -11,7 +11,24 @@ namespace Payments.Domain.ValueObjects
 
         public bool IsBankSlip
         {
-            get { return Id (int) PaymentMethodsEnum}; set;
+            get { return Id == (int)PaymentMethodsEnum.BankSlip; }
+        }
+
+        public bool IsBankTransf
+        {
+            get { return Id == (int)PaymentMethodsEnum.BankTransf; }
+        }
+        public bool IsCreditCard
+        {
+            get { return Id == (int)PaymentMethodsEnum.CreditCard; }
+        }
+        public bool IsDebitCard
+        {
+            get { return Id == (int)PaymentMethodsEnum.DebitCard; }
+        }
+        public bool IsUndefined
+        {
+            get { return Id == (int)PaymentMethodsEnum.Undefined; }
         }
 
         public PaymentMethods()
