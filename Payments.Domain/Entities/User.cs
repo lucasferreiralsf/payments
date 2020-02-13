@@ -11,10 +11,7 @@ namespace Payments.Domain.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public ICollection<Order> Orders { get; set; }
-        public User()
-        {
-        }
+        public virtual ICollection<Order> Orders { get; set; }
 
         public override void Validate()
         {

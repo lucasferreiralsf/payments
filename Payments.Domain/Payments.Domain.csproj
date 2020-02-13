@@ -8,6 +8,7 @@
     <Folder Include="Entities\" />
     <Folder Include="ValueObjects\" />
     <Folder Include="Enum\" />
+    <Folder Include="Contracts\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />

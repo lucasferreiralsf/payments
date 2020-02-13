@@ -1,0 +1,7 @@
+﻿{
+  "ConnectionStrings": {
+    "SqlServerConnection": "",
+    "MySqlConnection": "Server=127.0.0.1;Database=payments_api_db;Uid=root;Pwd=root;"
+
+  }
+}
